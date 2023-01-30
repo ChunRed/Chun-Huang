@@ -1,0 +1,21 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+    display: block;
+  }
+  
+
+#title{
+    margin : auto;
+    margin-left :50%; 
+    font-size : 30px;
+    color : #478d67;
+}
+
+#img{
+    margin : auto;
+    margin-left :20%; 
+}
+  

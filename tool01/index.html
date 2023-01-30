@@ -5,28 +5,92 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         
         <meta charset="utf-8" />
+        
 
     </head>
 
     <body>
         <script src="https://unpkg.com/vue@2.3.4/dist/vue.js"></script>
+
         
         <div id="app">
-            <div id="selection1">{{ message }}</div>
-            <img id="selection2" :src="image" >
+
+            <!-- get value & image (:) -->
+            <div id="selection1">
+                <div id="title"> {{message}} </div>
+                <div>sel 1</div>
+                <img id="img" :src="image" >
+            
+            </div>
+            
+            
+            <hr> <!-- methods & v-on: (@) -->
+            <div>sel 2</div>
+            <div id="selection2">
+                <button id="left" @click="changeIndex(-1)" >left</button>
+                <div> {{index}} </div>
+                <button id="right" @click="changeIndex(1)" >right</button>
+            </div>
+
+
+            <hr>
+            <div>sel 3</div>
+            <div id="selection3"></div>
+
+
+            <hr>
+            <div>sel 4</div>
+            <div id="selection4"></div>
+
+
+            <hr>
+            <div>sel 5</div>
+            <div id="selection5"></div>
+
+
+            <hr>
+            <div>sel 6</div>
+            <div id="selection6"></div>
+
+
+            <hr>
+            <div>sel 7</div>
+            <div id="selection7"></div>
+
+
+            <hr>
+            <div>sel 8</div>
+            <div id="selection8"></div>
+
         </div>
         
         <script>
         
-        let d = {
-            message: "hello worlds",
-            image: '/001.png',
+        let data1 = {
+            message: "Vue tool",
+            image: 'Logo-Vuejs.png',
         }
 
-        let vm = new Vue({
-            el: '#app',
-            data: d
+        let vm1 = new Vue({
+            el: '#selection1',
+            data: data1,
 
+        })
+
+
+        let data2 = {
+            index: 0, 
+        }
+
+        let vm2 = new Vue({
+            el: '#selection2',
+            data: data2,
+            methods:{
+                changeIndex(value){
+
+                    this.index = (this.index + value + 5) % 5;
+                }
+            }
         })
 
 
