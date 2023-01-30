@@ -16,6 +16,6 @@ html, body {
 
 #img{
     margin : auto;
-    margin-left :20%; 
+    margin-left : calc(50vw - 250px);
 }
   
