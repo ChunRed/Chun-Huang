@@ -13,3 +13,8 @@ function draw() {
     
     circle(width/2 + x, height/2 + y, 900);
 }
+
+
+function windowResized(){
+    resizeCanvas(windowWidth*(12/12), 500);
+  }
