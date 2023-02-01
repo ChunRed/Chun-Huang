@@ -10,13 +10,12 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
         <!-- p5.js -->
-        <script src=
-        "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js">
-        </script>
-        <script src=
-        "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js">
-        </script>
-        <script src="index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+
+        <!-- vue3 -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.45/vue.global.js' integrity='sha512-boEFRnFthrf+bNt2FkCFAjd809yT4B9R5Kr1eTROVLdzT79sgQanuKUhu/R7eDHmWL8IcjHIkxjdEVvvP6DLMA==' crossorigin='anonymous'></script>
+
         <script src="mycanvas01.js"></script>
        
         <meta charset="utf-8" />
@@ -30,10 +29,10 @@
 <!-- title -->
             <div class="row mt-5">
                 <div class="col">
-                    <div class="item">
+                    <div class="Title">
                         <div class="card">
                             <div class="card-header">
-                                <h2 class="text-light">林俊遑 | Chun-Huang, Lin</h2>
+                                <h2 > {{title}} </h2>
                             </div>
             
                             <div class="card-body">
@@ -56,11 +55,14 @@
                                         col-lg-8
                                         col-xl-8">
                                         <div class="item p-md-5">
+
                                             <h5 class="card-title">About</h5>
-                                            <p class="card-text">
-                                            With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.
-                                            </p>
-                                            <button type="button" class="btn btn-light">LinkTree</button>
+                                            <p class="card-text"> {{about}} </p>
+
+                                            <h5 class="card-title">CV</h5>
+                                            <p class="card-text">{{cv}}</p>
+
+                                            <button type="button" class="btn btn-light mt-5">LinkTree</button>
                                         </div>
                                     </div>
                                 </div>
@@ -179,6 +181,7 @@
             </div>
 
 
+
 <!-- canvas -->
             <div class="row 
                 mt-2 
@@ -191,6 +194,10 @@
                     </div>
                 </div>
             </div>
+
+<!-- vue3 -->
+            <script src="index.js"></script>
+
         </div>
     </body>
 </html>

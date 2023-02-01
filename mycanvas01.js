@@ -11,9 +11,12 @@ function setup() {
 
 function draw() {
     
-    background(200);
-    noStroke();
-    text(RWD(), 0,0, 100, 100);
+    background(255);
+
+    let x = cos(frameCount * 0.1) * 100; 
+    let y = sin(frameCount * 0.1) * 100; 
+    
+    circle(width/2 + x, height/2 + y, 200);
 }
 
 

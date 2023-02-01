@@ -1,20 +1,22 @@
-// function setup() {
-//     var canvas = createCanvas(windowWidth*(12/12), 500);
-//     canvas.parent('canvasForHTML');
-// }
+Vue.createApp({
+    data: function(){
+        return{
 
-// function draw() {
-    
-//     background(200);
-//     noStroke();
+            title: "林俊遑 | Chun-Huang, Lin",
 
-//     let x = cos(frameCount * 0.1) * 100; 
-//     let y = sin(frameCount * 0.1) * 100; 
-    
-//     circle(width/2 + x, height/2 + y, 900);
-// }
+            about:
+            "About With supporting text below as a natural lead-in to additional content.With supporting text below as a lead-in to additional content.With supporting text below as a natural lead-in to additional content.",
+
+            cv:
+            "CV With supporting text below as a natural lead-in to additional content.With supporting text below as a lead-in to additional content.With supporting text below as a natural lead-in to additional content.",
 
 
-// function windowResized(){
-//     resizeCanvas(windowWidth*(12/12), 500);
-//   }
+        }
+    },
+    methods: {
+
+    },
+    mounted: function(){
+
+    },
+}).mount('.Title')
