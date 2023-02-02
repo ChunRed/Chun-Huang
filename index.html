@@ -82,12 +82,17 @@
             row-cols-md-2 
             row-cols-lg-4 
             row-cols-xl-4 
+            row-cols-xs-vh-10
+            row-cols-sm-vh-10
+            row-cols-md-vh-10
+            row-cols-lg-vh-10
+            row-cols-xl-vh-10
             justify-content-center">
                 
                 <div class="col-xs">
                     <div class="item">
                         <div class="card">
-                            <img :src="Card1.image" class="w-10  mh-10">
+                            <img :src="Card1.image" class="w-10 card-img">
                             <div class="d-flex card-img-overlay justify-content-center align-items-center pt-5">
                                 <p class="fs-1 fw-bold text-light opacity-90">{{ Card1.title }}</p>
                             </div>
@@ -103,7 +108,7 @@
                 <div class="col-xs">
                     <div class="item">
                         <div class="card">
-                            <img :src="Card2.image" class="w-10 mh-10">
+                            <img :src="Card2.image" class="w-10 card-img">
                             <div class="d-flex card-img-overlay justify-content-center align-items-center pt-5">
                                 <p class="fs-1 fw-bold text-light opacity-90">{{ Card2.title }}</p>
                             </div>
