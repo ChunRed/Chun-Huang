@@ -56,9 +56,9 @@ Vue.createApp({
                 image: 'image/img_virtual.jpg',
 
                 item: {
-                    l1: '生成式藝術',
+                    l1: '生成藝術',
                     l2: 'AR / VR',
-                    l3: '互動式網頁設計',
+                    l3: '互動網頁',
                 },
 
                 link: '',

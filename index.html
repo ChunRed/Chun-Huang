@@ -85,20 +85,23 @@
 
             justify-content-center">
                 
-                <div class="col-xs">
-                    <div class="item hovereffect">
-                        <div class="card">
-                            <img :src="Card1.image" class="img-fluid">
-                            <div class="d-flex card-img-overlay justify-content-center align-items-center pt-5">
-                                <p class="fs-1 fw-bold text-light opacity-90">{{ Card1.title }}</p>
-                            </div>
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item" v-for="item in Card1.item" > {{ item }} </li>
-                            </ul>
+            <div class="col-xs">
+                <div class="item hovereffect">
+                    <div class="card">
+                        <img :src="Card1.image" class="img-fluid">
+                        <div class="d-flex card-img-overlay justify-content-center align-items-center pt-5">
+                            <li style="list-style-type: none;">
+                                <p class=" fs-1 fw-bold opacity-90">{{ Card1.title }}</p>
+                                <ul>
+                                    <li class="list-group-item click" v-for="item in Card1.item" > 
+                                        <p class=" fs-3 fw-bold " >{{ item }}</p>
+                                    </li>
+                                </ul>
+                            </li>
                         </div>
                     </div>
                 </div>
+            </div>
 
 
                 <div class="col-xs">
@@ -106,12 +109,15 @@
                         <div class="card">
                             <img :src="Card2.image" class="img-fluid">
                             <div class="d-flex card-img-overlay justify-content-center align-items-center pt-5">
-                                <p class="fs-1 fw-bold text-light opacity-90">{{ Card2.title }}</p>
+                                <li style="list-style-type: none;">
+                                    <p class=" fs-1 fw-bold opacity-90">{{ Card2.title }}</p>
+                                    <ul>
+                                        <li class="list-group-item click" v-for="item in Card2.item" > 
+                                            <p class=" fs-3 fw-bold " >{{ item }}</p>
+                                        </li>
+                                    </ul>
+                                </li>
                             </div>
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item" v-for="item in Card2.item" > {{ item }} </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -122,12 +128,15 @@
                         <div class="card">
                             <img :src="Card3.image" class="img-fluid">
                             <div class="d-flex card-img-overlay justify-content-center align-items-center pt-5">
-                                <p class="fs-1 fw-bold text-light opacity-90">{{ Card3.title }}</p>
+                                <li style="list-style-type: none;">
+                                    <p class=" fs-1 fw-bold opacity-90">{{ Card3.title }}</p>
+                                    <ul>
+                                        <li class="list-group-item click" v-for="item in Card3.item" > 
+                                            <p class=" fs-3 fw-bold " >{{ item }}</p>
+                                        </li>
+                                    </ul>
+                                </li>
                             </div>
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item" v-for="item in Card3.item" > {{ item }} </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -138,36 +147,16 @@
                         <div class="card">
                             <img :src="Card4.image" class="img-fluid">
                             <div class="d-flex card-img-overlay justify-content-center align-items-center pt-5">
-                                <p class="fs-1 fw-bold text-light opacity-90">{{ Card4.title }}</p>
+                                <li style="list-style-type: none;">
+                                    <p class=" fs-1 fw-bold opacity-90">{{ Card4.title }}</p>
+                                    <ul>
+                                        <li class="list-group-item click" v-for="item in Card4.item" > 
+                                            <p class=" fs-3 fw-bold " >{{ item }}</p>
+                                        </li>
+                                    </ul>
+                                </li>
                             </div>
-
-                            <div class="overlay">
-                                <h2>click</h2>
-                            </div>
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item" v-for="item in Card4.item" > {{ item }} </li>
-                            </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-
-<!-- new row -->
-            <div class="row
-            mt-5
-            row-cols-xs-12 
-            row-cols-sm-12
-            row-cols-md-12  
-            row-cols-xl-12">
-
-                <div class="col-xs">
-                    <div class="hovereffect">
-                        <img class="img-responsive" :src="Card1.image" alt="">
-                            <div class="overlay">
-                                <h2>Effect 10</h2>
-                            </div>
                     </div>
                 </div>
             </div>
