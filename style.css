@@ -48,7 +48,7 @@
 }
 
 .hovereffect:hover p {
-    color: rgb(131, 131, 131);
+    color: rgb(255, 255, 255);
     -webkit-transform: translate3d(0,-100%,0);
 	transform: translate3d(0,-100%,0);
 }
@@ -60,6 +60,6 @@
 
 .hovereffect:hover .click {
     visibility: visible;
-    color: rgb(168, 168, 168);
+    color: rgb(255, 255, 255);
 }
 
