@@ -41,25 +41,35 @@
 .hovereffect p {
     display: block;
     position: relative;
-    color: rgb(200, 200, 200);
+    color: rgb(255, 255, 255);
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
     
 }
 
 .hovereffect:hover p {
-    color: rgb(200, 200, 200);
-    -webkit-transform: translate3d(0,-100%,0);
-	transform: translate3d(0,-100%,0);
+    color: rgb(255, 255, 255);
+    -webkit-transform: translate3d(0,-200%,0);
+	transform: translate3d(0,-200%,0);
 }
 
 .hovereffect .click {
+    position: relative;
+    text-align: center;
+    margin-left: -50px;
     visibility: hidden;
     color: rgb(200, 200, 200);
+
+    -webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+    
 }
 
 .hovereffect:hover .click {
     visibility: visible;
     color: rgb(200, 200, 200);
+
+    -webkit-transform: translate3d(0,-100%,0);
+	transform: translate3d(0,-100%,0);
 }
 
