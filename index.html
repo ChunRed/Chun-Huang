@@ -81,12 +81,12 @@
             row-cols-sm-1
             row-cols-md-2 
             row-cols-lg-4 
-            row-cols-xl-4 
+            row-cols-xl-4
 
             justify-content-center">
                 
                 <div class="col-xs">
-                    <div class="item">
+                    <div class="item hovereffect">
                         <div class="card">
                             <img :src="Card1.image" class="img-fluid">
                             <div class="d-flex card-img-overlay justify-content-center align-items-center pt-5">
@@ -102,7 +102,7 @@
 
 
                 <div class="col-xs">
-                    <div class="item">
+                    <div class="item hovereffect">
                         <div class="card">
                             <img :src="Card2.image" class="img-fluid">
                             <div class="d-flex card-img-overlay justify-content-center align-items-center pt-5">
@@ -118,7 +118,7 @@
                 
                 
                 <div class="col-xs">
-                    <div class="item">
+                    <div class="item hovereffect">
                         <div class="card">
                             <img :src="Card3.image" class="img-fluid">
                             <div class="d-flex card-img-overlay justify-content-center align-items-center pt-5">
@@ -134,11 +134,15 @@
                 
                 
                 <div class="col-xs">
-                    <div class="item">
+                    <div class="item hovereffect">
                         <div class="card">
                             <img :src="Card4.image" class="img-fluid">
                             <div class="d-flex card-img-overlay justify-content-center align-items-center pt-5">
                                 <p class="fs-1 fw-bold text-light opacity-90">{{ Card4.title }}</p>
+                            </div>
+
+                            <div class="overlay">
+                                <h2>click</h2>
                             </div>
 
                             <ul class="list-group list-group-flush">
@@ -147,19 +151,23 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
 
-<!-- canvas -->
+<!-- new row -->
+            <div class="row
+            mt-5
+            row-cols-xs-12 
+            row-cols-sm-12
+            row-cols-md-12  
+            row-cols-xl-12">
 
-        </script>
-            <div class="row 
-                mt-2 
-                g-5
-                justify-content-center">
-
-                <div class="col-12">
-                    <div class="item">
-                        <div id="canvasForHTML"></div>
+                <div class="col-xs">
+                    <div class="hovereffect">
+                        <img class="img-responsive" :src="Card1.image" alt="">
+                            <div class="overlay">
+                                <h2>Effect 10</h2>
+                            </div>
                     </div>
                 </div>
             </div>
